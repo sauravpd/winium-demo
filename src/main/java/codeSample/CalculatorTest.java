@@ -8,18 +8,30 @@ import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.annotations.Test;
 
+/**
+ * Calculator Test test using winium
+ * @author saurav
+ *
+ */
 public class CalculatorTest 
 {
 
+	/**
+	 * application path
+	 */
+	public static final String APPLICATION_PATH="C:\\windows\\system32\\calc.exe";
+	
+	/**
+	 * Sample window application test using winium
+	 */
 	@Test
 	public void calcTest() 
 	{
 		try
 		{
 			WiniumDriver driver = null;
-			String appPath = "C:/windows/system32/calc.exe";
 			DesktopOptions option = new DesktopOptions();
-			option.setApplicationPath(appPath);
+			option.setApplicationPath(APPLICATION_PATH);
 			option.setDebugConnectToRunningApp(false);
 			option.setLaunchDelay(2);
 			driver = new WiniumDriver(new URL("http://localhost:9999"),option);
