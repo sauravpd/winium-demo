@@ -25,7 +25,7 @@ public class NodepadTest
 	{
 		try
 		{
-			System.out.println("test");
+			System.out.println("Notepad Test");
 			DesktopOptions options= new DesktopOptions();
 			options.setApplicationPath(APPLICATION_PATH);
 			WiniumDriver driver=new WiniumDriver(new URL("http://localhost:9999"),options);

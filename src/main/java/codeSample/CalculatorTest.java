@@ -9,7 +9,7 @@ import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.annotations.Test;
 
 /**
- * Calculator Test test using winium
+ * Calculator Test using winium
  * @author saurav
  *
  */
@@ -27,6 +27,7 @@ public class CalculatorTest
 	@Test
 	public void calcTest() 
 	{
+		System.out.println("Calculator Test");
 		try
 		{
 			WiniumDriver driver = null;
